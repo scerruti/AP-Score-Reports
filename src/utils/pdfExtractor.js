@@ -1,7 +1,7 @@
 import * as pdfjsLib from 'pdfjs-dist';
 
 // Use the bundled worker file from public directory
-pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.js';
+pdfjsLib.GlobalWorkerOptions.workerSrc = '/AP-Score-Reports/pdf.worker.min.js';
 
 export async function extractPDFText(file) {
   const arrayBuffer = await file.arrayBuffer();
