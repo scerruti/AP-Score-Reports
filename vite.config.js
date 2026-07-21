@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import { copyFileSync, mkdirSync } from 'fs'
 
 export default defineConfig({
+  base: '/AP-Score-Reports/',
   plugins: [
     react(),
     {
