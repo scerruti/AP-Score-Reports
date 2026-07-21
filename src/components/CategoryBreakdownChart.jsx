@@ -94,8 +94,6 @@ export default function CategoryBreakdownChart({ data }) {
     return null;
   }
 
-  console.log('CategoryBreakdownChart data:', JSON.stringify(data, null, 2));
-
   return (
     <div className="category-breakdown">
       <h3>Test Composition by Category</h3>
