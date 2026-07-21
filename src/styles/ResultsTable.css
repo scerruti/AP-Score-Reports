@@ -1,0 +1,156 @@
+.results-table-container {
+  margin-top: 1.5rem;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.results-table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.results-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.results-table tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+.results-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.results-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.results-table td {
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+
+.category-type {
+  font-weight: 600;
+  color: #007bff;
+  white-space: nowrap;
+}
+
+.category-name {
+  color: #333;
+}
+
+.ratio {
+  font-weight: 600;
+  font-size: 1.05rem;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+}
+
+.ratio.high {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.ratio.aligned {
+  background-color: #e7f3ff;
+  color: #004085;
+}
+
+.ratio.low {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.ratio.nodata {
+  background-color: #e2e3e5;
+  color: #383d41;
+  font-style: italic;
+}
+
+.performance-label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.question-percentage {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  font-weight: 500;
+}
+
+.legend {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.legend-color {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+}
+
+.legend-color.high {
+  background-color: #d4edda;
+  border: 1px solid #28a745;
+}
+
+.legend-color.aligned {
+  background-color: #e7f3ff;
+  border: 1px solid #007bff;
+}
+
+.legend-color.low {
+  background-color: #f8d7da;
+  border: 1px solid #dc3545;
+}
+
+.legend-color.nodata {
+  background-color: #e2e3e5;
+  border: 1px solid #6c757d;
+}
+
+@media (max-width: 768px) {
+  .results-table {
+    font-size: 0.9rem;
+  }
+
+  .results-table th,
+  .results-table td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .category-type {
+    font-size: 0.85rem;
+  }
+
+  .legend {
+    gap: 1rem;
+  }
+}
