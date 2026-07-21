@@ -22,7 +22,7 @@ export default function App() {
           </div>
           <div className="footer-csta">
             <a href="https://sandiego.csteachers.org" target="_blank" rel="noopener noreferrer" className="csta-link">
-              <img src="/csta-logo.png" alt="CSTA San Diego" className="csta-logo" />
+              <img src="/AP-Score-Reports/csta-logo.png" alt="CSTA San Diego" className="csta-logo" />
               <span>CSTA San Diego</span>
             </a>
           </div>

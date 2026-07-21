@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Analyze AP exam score reports locally">
   <meta name="theme-color" content="#007bff">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="/AP-Score-Reports/manifest.json">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23007bff' width='100' height='100'/><text x='50' y='75' font-size='60' font-weight='bold' fill='white' text-anchor='middle'>AP</text></svg>">
   <title>AP Score Analyzer</title>
   <style>
@@ -29,7 +29,7 @@
   <script type="module" src="/src/main.jsx"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js');
+      navigator.serviceWorker.register('/AP-Score-Reports/sw.js', { scope: '/AP-Score-Reports/' });
     }
   </script>
 </body>
